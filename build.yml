@@ -1,5 +1,5 @@
 include:
   - board: nice_nano_v2
-    shield: ghosty_left
+    shield: ghosty62_left
   - board: nice_nano_v2
-    shield: ghosty_right
+    shield: ghosty62_right
