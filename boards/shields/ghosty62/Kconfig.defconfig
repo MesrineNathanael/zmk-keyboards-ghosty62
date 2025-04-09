@@ -1,0 +1,17 @@
+if SHIELD_GHOSTY_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Ghosty62"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_GHOSTY_LEFT || SHIELD_GHOSTY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

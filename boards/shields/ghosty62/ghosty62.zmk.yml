@@ -1,0 +1,12 @@
+file_format: "1"
+id: ghosty62
+name: Ghosty62
+type: shield
+url: https://github.com/MesrineNathanael/Ghosty62
+requires: [pro_micro]
+features:
+  - keys
+  - studio
+siblings:
+  - ghosty_left
+  - ghosty_right
