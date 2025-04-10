@@ -1,3 +1,4 @@
+name: zmk-keyboards-ghosty62
 build:
   settings:
     board_root: .
