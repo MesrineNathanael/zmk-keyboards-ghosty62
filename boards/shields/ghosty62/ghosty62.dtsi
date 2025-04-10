@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <ghosty62-layouts.dtsi>
 
 
+&noodle_ghosty62_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
