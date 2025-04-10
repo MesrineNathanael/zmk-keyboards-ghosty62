@@ -4,7 +4,36 @@ This repository contains a template for a ZMK module, as it would most frequentl
 
 ## Usage
 
-Read through the [ZMK Module Creation](https://zmk.dev/docs/development/module-creation) page for details on how to configure this template.
+Edit your west.yml file found in your zmk-config's config directory to add the ghosty62 module. Example:
+
+```
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: MesrineNathanael
+      url-base: https://github.com/MesrineNathanael
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-keyboards-ghosty62
+      remote: MesrineNathanael
+      revision: main
+  self:
+    path: config
+```
+
+and include in the build.yml:
+```
+include:
+  - board: nice_nano_v2
+    shield: ghosty62_left
+  - board: nice_nano_v2
+    shield: ghosty62_right
+```
+Once you have the module added to your west.yml you can then build firmware as if it was in your config's shield directory or in ZMK main.
 
 ## More Info
 
